@@ -1,8 +1,6 @@
+# Laravel specific
 /vendor
 /node_modules
-.env
-.env.*
-!.env.example
 /storage/*.key
 /public/storage
 /storage/framework/cache/data
@@ -22,11 +20,78 @@ Thumbs.db
 /.phpunit.result.cache
 /coverage
 /.railway
-.env.railway
 
-# Sensitive environment files
+# Environment files (sensitive)
 .env
+.env.*
+!.env.example
 .env.railway
 .env.production
 .env.local
 .env.*.local
+
+# Compiled assets
+/public/build
+/public/hot
+/public/storage
+/public/css
+/public/js
+/public/mix-manifest.json
+/public/vendor
+
+# Composer
+composer.phar
+composer.lock
+/.composer
+
+# PHPUnit
+.phpunit.result.cache
+/.phpunit.cache
+
+# Laravel IDE helper
+_ide_helper.php
+.phpstorm.meta.php
+
+# SQLite database (if using SQLite locally)
+*.sqlite
+*.sqlite-journal
+
+# Logs
+*.log
+storage/logs/*.log
+
+# Session files
+storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+
+# Cache files
+storage/framework/cache/*
+!storage/framework/cache/.gitignore
+
+# Views cache
+storage/framework/views/*
+!storage/framework/views/.gitignore
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vite
+/build
+/.vite
+
+# Sentry
+.sentry
+
+# Telescope
+/telescope
